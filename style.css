@@ -1,0 +1,234 @@
+@font-face {
+  font-family: Product b;
+  src: url(./Product\ Sans\ Bold.ttf);
+}
+@font-face {
+  font-family: product r;
+  src: url(./Product\ Sans\ Regular.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+#main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* overflow-x: hidden; */
+  /* background-color: orangered; */
+}
+nav {
+  position: fixed;
+  width: 100%;
+  height: 10vh;
+  /* background-color: #fff; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0vw 3vw;
+  z-index: 99;
+}
+nav a {
+  text-decoration: none;
+  font-family: Product r;
+  color: #fff;
+}
+.center-nav {
+  display: flex;
+  gap: 3vw;
+}
+.center-nav a {
+  font-size: 1.2vw;
+}
+nav i {
+  font-size: 1.5vw;
+  color: #fff;
+}
+.one {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(150deg, rgb(218, 144, 7), rgb(255, 51, 0));
+}
+#fanta {
+  width: 40%;
+  position: absolute;
+  z-index: 2;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+#orange2 {
+  width: 15%;
+  position: absolute;
+  top: 12%;
+  left: 35%;
+  z-index: 1;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+#orange {
+  position: absolute;
+  width: 20%;
+  z-index: 3;
+  top: 55%;
+  right: 30%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+.one h1 {
+  font-size: 25vw;
+  font-family: Product b;
+  color: #fff;
+}
+
+#leaf {
+  top: 15%;
+  left: 0%;
+  transform: rotate(60deg);
+  position: absolute;
+  width: 18%;
+  /* background-color: red; */
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+#leaf2 {
+  top: 70%;
+  left: 80%;
+  transform: rotate(-90deg);
+  position: absolute;
+  width: 12%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+  /* background-color: red; */
+}
+
+#leaf3 {
+  position: absolute;
+  width: 25%;
+  top: 15%;
+  right: 0%;
+}
+.two {
+  width: 100%;
+  height: 100vh;
+  background: #4d231c;
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.left-2 {
+  width: 50%;
+  height: 100%;
+  /* background-color: rgb(204, 65, 65); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.right-2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5vh;
+  /* background-color: rgb(4, 129, 129); */
+}
+.left-2 svg {
+  margin-top: 50vh;
+  width: 40%;
+  transform: rotateX(60deg);
+  /* left: 10%; */
+  position: absolute;
+  left: 3%;
+}
+.right-2 h1 {
+  color: #fff;
+  font-size: 5vw;
+  font-family: Product b;
+}
+.right-2 p {
+  font-size: 1.2vw;
+  color: #fff;
+  width: 80%;
+}
+.three {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  gap: 5vw;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(150deg, rgb(255, 166, 0), rgb(255, 94, 0));
+}
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2vh;
+  width: 25vw;
+  height: 70vh;
+  margin-top: 10vh;
+  border-radius: 20px;
+  background-color: #fff;
+  /* overflow: hidden; */
+}
+.card h1 {
+  margin-top: 40vh;
+  font-size: 3vw;
+}
+
+.card button {
+  font-size: 1vw;
+  border-radius: 50px;
+  border: none;
+  color: #fff;
+  background-color: rgb(255, 149, 0);
+  padding: 1vw 2vw;
+  cursor: pointer;
+}
+.card button:hover {
+  background-color: #ff8d0a;
+}
+#cocaCola {
+  position: absolute;
+  width: 27vh;
+  top: -10%;
+}
+#Pepsi {
+  position: absolute;
+  width: 40vh;
+  top: -15%;
+}
+.lemon {
+  width: 30vw;
+  position: absolute;
+  top: -33%;
+}
+.lemon2 {
+  width: 30vw;
+  position: absolute;
+  top: -33%;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fa7a02;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #b80e0e;
+}
